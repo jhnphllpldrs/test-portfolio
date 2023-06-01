@@ -1,0 +1,85 @@
+header{
+    height: 100vh;
+    padding-top: 5rem;
+    overflow: hidden;
+    padding-bottom: 7rem;
+}
+
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.cta{
+    margin-top: 2.5rem;
+    display:flex ;
+    gap: 1.4rem;
+    justify-content: center;
+}
+
+.header_socials{
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    font-size: 2rem;
+}
+
+.header_socials:after{
+    content: "";
+    width: 1px;
+    height: 3rem;
+    background: var(--color-primary);
+}
+.me{
+    width: 22rem;
+    height: 33rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    padding: 10px;
+    cursor: pointer;
+}
+  .scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5 rem;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+   
+  }
+  .scroll_down:hover{
+    transform: scale(2);
+  }
+
+  /*===== Mediun Devices=====*/
+@media screen and (max-width: 1024px){
+
+    header{
+        
+        height: 68vh;
+    }
+
+}
+
+  /*===== Small Devices=====*/
+  @media screen and (max-width: 600px){
+
+    header{
+        
+        height: 100vh;
+    }
+   .scroll_down{
+        display: none;
+    }
+    .header_socials{
+       position: absolute;
+       top: -50px;
+       left: 5px;
+    }
+  }
+  
